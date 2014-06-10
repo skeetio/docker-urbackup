@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 MAINTAINER Brian Findlay <bfindlay@comlink.net>
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y python-software-properties btrfs-tools

@@ -5,7 +5,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu saucy main universe" > /etc/apt/s
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y python-software-properties btrfs-tools
-RUN add-apt-repository ppa:uroni/urbackup
+RUN apt-add-repository ppa:uroni/urbackup
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y urbackup-server
 RUN mkdir -p /media/BACKUP/urbackup
